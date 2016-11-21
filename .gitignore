@@ -1,0 +1,12 @@
+/node_modules
+/.idea
+/.sass-cache
+/css/style.css.map
+
+
+
+
+/css/style.css
+/css/style.min.css
+/src/main.js
+/src/main.min.js
