@@ -1,8 +1,17 @@
 Object Oriented Practice
 
+Maybe to create a bowling scorecard?
+
+Objects could be:
+- 'Player', 'Game'
 
 
-General:
+
+
+
+
+
+General set up:
 
 git clone this
 
