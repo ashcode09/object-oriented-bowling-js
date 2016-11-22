@@ -1,0 +1,7 @@
+.name-players {
+  display: none;
+
+  &.active-view {
+    display: block;
+  }
+}

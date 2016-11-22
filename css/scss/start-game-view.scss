@@ -1,0 +1,7 @@
+.start-game {
+  display: none;
+
+  &.active-view {
+    display: block;
+  }
+}
