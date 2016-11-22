@@ -1,9 +1,23 @@
 Object Oriented Practice
+========================
 
-Maybe to create a bowling scorecard?
+Bowling Scoreboard
+==================
 
 Objects could be:
-- 'Player', 'Game'
+- 'Game'
+- 'Player'
+- 'Scoreboard'
+
+Thinking process:
+-----------------
+[x] Can I start a game?
+[x] Can I add a player to the game?
+[x] Can I add multiple players to the game?
+[x] Can I name each player in the game?
+[x] Can I list each player by name?
+
+[ ] Can I create a scoreboard?
 
 
 
@@ -11,12 +25,22 @@ Objects could be:
 
 
 
-General set up:
+Set Up Locally
+--------------
 
-git clone this
+In the terminal, navigate to the directory you want to save this project to.
+Clone the project:
+$ git clone https://github.com/ashleigh090990/object-oriented-bowling-js.git
+*(Currently the most up-to-date branch is develop, so:*
+*$ git fetch*
+*$ git checkout develop*
 
-npm install to install dependencies
+Install the dependencies:
+$ npm install
 
-grunt to build the css and js files
+Build the .js and .css files:
+$ grunt
 
-'node_modules/http-server/bin/http-server' to run server - it will say where it's available, just go to that and click on the index.html file to view
+To run a local server and view the app:
+$ node_modules/http-server/bin/http-server
+It will say where it's available, just go to that in the browser.
