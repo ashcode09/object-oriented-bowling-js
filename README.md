@@ -26,6 +26,7 @@ Creating players:
 - [x] Can I add multiple players to the game?
 - [x] Can I name each player in the game?
 - [x] Can I list each player by name?
+
 Recording scores on the scoreboard:
 - [ ] Can I create a scoreboard?
 - [ ] Can I create an empty scoareboard with 10 columns?
@@ -34,6 +35,7 @@ Recording scores on the scoreboard:
 - [ ] Can I see a player's overall score?
 - [ ] Can I alternate through each player and record their rolls?
 - [ ] Can I see each player's overall score?
+
 Implementing the rules:
 - [ ] *Research the rules and add a checklist here*
 
@@ -53,9 +55,8 @@ $ git clone https://github.com/ashleigh090990/object-oriented-bowling-js.git
 **Currently the most up-to-date branch is develop, so:**
 
 ```
-**$ git fetch**
-
-**$ git checkout develop**
+$ git fetch
+$ git checkout develop
 ```
 
 Install the dependencies:
