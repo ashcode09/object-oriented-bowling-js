@@ -16,14 +16,16 @@
             <input type="submit" value="Name" onclick="game.playerToBeNamed.addName(); game.displayNextPlayerToBeNamed()"/>
             <span id="playerNameAdded"></span>
             <div id="listOfPlayers"></div>
-            <input id="showScoreboard" class="hide-element" type="submit" value="show scoreboard" onclick="scoreboard = new scoreboard()"/>
+            <input id="showScoreboard" class="hide-element" type="submit" value="show scoreboard" onclick="scoreboard = new scoreboard(game.amountOfPlayersChosen)"/>
         </div>
     </div>
 
-    <div id="scoreboard" class="hide-element">
-        scoreboard
-    </div>
-
+    <table id="scoreboard" class="hide-element">
+        <thead>
+        </thead>
+        <tbody id="scoreboardBody">
+        </tbody>
+    </table>
 
     <script src="src/main.min.js"></script>
 </body>
