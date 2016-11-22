@@ -4,7 +4,18 @@
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="example">Hey</div>
+
+<div class="">
+    Amount
+    <input id="playerAmount"/>
+    <input type="submit" value="Start game" onclick="game.createPlayers()"/>
+</div>
+
+<div>
+    Name of <span id="playerBeingNamed"></span>
+    <input id="playerName" type="text"/>
+    <input type="submit" value="add player" onclick="game.namePlayers()"/>
+</div>
 
     <script src="src/main.min.js"></script>
 </body>
