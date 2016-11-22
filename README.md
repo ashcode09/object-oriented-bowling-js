@@ -28,9 +28,10 @@ Creating players:
 - [x] Can I list each player by name?
 
 Recording scores on the scoreboard:
-- [ ] Can I create a scoreboard?
-- [ ] Can I create an empty scoareboard with 10 columns?
-- [ ] Can I list my players one of each row on the scoreboard?
+- [x] Can I create a scoreboard?
+- [x] Can I create *x* amount of rows for *x* amount of players?
+- [x] Can I list my players on of each row on the scoreboard?
+- [ ] Can I create an empty scoreboard with 10 columns?
 - [ ] Can a player's roll be recorded on the scoreboard?
 - [ ] Can I see a player's overall score?
 - [ ] Can I alternate through each player and record their rolls?
