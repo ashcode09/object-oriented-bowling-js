@@ -1,14 +1,11 @@
 Object Oriented Practice
 ========================
 
-
 Bowling Scoreboard
 ==================
 
-
 Objects
 -------
-
 
 Objects could be:
 
@@ -43,7 +40,6 @@ Implementing the rules:
 
 Set Up Locally
 --------------
-
 
 In the terminal, navigate to the directory you want to save this project to.
 
