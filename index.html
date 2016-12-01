@@ -7,16 +7,16 @@
     <div id="initialisingGame">
         <div id="startGame" class="start-game active-view">
             <input id="amountOfPlayersChosen" type="text"/>
-            <input type="submit" onclick="game = new game()" value="Start"/>
+            <input type="submit" onclick="game.initPlayers()" value="Start"/>
         </div>
 
         <div id="namePlayers" class="name-players">
             Name <span id="playerToName"></span>
             <input type="text" placeholder="Type" id="playerName"/>
-            <input type="submit" value="Name" onclick="game.playerToBeNamed.addName(); game.displayNextPlayerToBeNamed()"/>
+            <input type="submit" value="Name" onclick="game.nameNextPlayer()"/>
             <span id="playerNameAdded"></span>
             <div id="listOfPlayers"></div>
-            <input id="showScoreboard" class="hide-element" type="submit" value="show scoreboard" onclick="scoreboard = new scoreboard(game.amountOfPlayersChosen)"/>
+            <input id="showScoreboard" class="hide-element" type="submit" value="show scoreboard" onclick="game.createScoreboard()"/>
         </div>
     </div>
 

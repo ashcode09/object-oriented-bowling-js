@@ -1,14 +1,14 @@
 var game = function () {
     var maxPlayers = 6;
-    this.amountOfPlayersChosen = 1;
-    this.playerToBeNamed = '';
+    var amountOfPlayersChosen = 1;
+    var playerToBeNamed = '';
 
     this.initPlayers = function () {
-        this.amountOfPlayersChosen = document.getElementById('amountOfPlayersChosen').value || 1;
-        if (this.amountOfPlayersChosen >= maxPlayers) {
-            this.amountOfPlayersChosen = maxPlayers;
+        amountOfPlayersChosen = document.getElementById('amountOfPlayersChosen').value || 1;
+        if (amountOfPlayersChosen >= maxPlayers) {
+            amountOfPlayersChosen = maxPlayers;
         }
-        for (var i=1; i<=parseInt(this.amountOfPlayersChosen); i++) {
+        for (var i=1; i<=parseInt(amountOfPlayersChosen); i++) {
             window['player'+i] = new player();
         }
         this.displayNextPlayerToBeNamed();
@@ -18,14 +18,12 @@ var game = function () {
         document.getElementById('startGame').classList.remove('active-view');
         document.getElementById('namePlayers').classList.add('active-view');
         var stop = false;
-        for (var i=1; i<=parseInt(this.amountOfPlayersChosen); i++) {
-            console.log('player' + i, window['player'+i].name == '');
+        for (var i=1; i<=parseInt(amountOfPlayersChosen); i++) {
             if (window['player'+i].name == '' && !stop) {
                 document.getElementById('playerToName').innerHTML = 'Player ' + i;
-                this.playerToBeNamed = window['player'+i];
+                playerToBeNamed = window['player'+i];
                 stop = true;
-            } else if (i==parseInt(this.amountOfPlayersChosen) && !stop) {
-                console.log('All players have names now')
+            } else if (i==parseInt(amountOfPlayersChosen) && !stop) {
                 document.getElementById('showScoreboard').classList.remove('hide-element');
             }
             this.listAllPlayers();
@@ -33,9 +31,8 @@ var game = function () {
     };
 
     this.listAllPlayers = function () {
-        for (var i=1; i<=parseInt(this.amountOfPlayersChosen); i++) {
+        for (var i=1; i<=parseInt(amountOfPlayersChosen); i++) {
             if (window['player'+i].name != '' && (document.getElementById('player'+i+'ListName') == null)) {
-                console.log(window['player'+i])
                 document.getElementById('playerNameAdded').innerHTML = 'Player ' + window['player'+i].name + ' added!';
                 var el = document.createElement('p');
                 el.id = 'player'+i+'ListName';
@@ -45,8 +42,12 @@ var game = function () {
         }
     };
 
+    this.nameNextPlayer = function () {
+        playerToBeNamed.addName();
+        this.displayNextPlayerToBeNamed()
+    };
 
-
-
-    this.initPlayers();
+    this.createScoreboard = function (playerCount) {
+        scoreboard = new scoreboard(amountOfPlayersChosen);
+    };
 };

@@ -11,6 +11,5 @@ var player = function () {
     this.updateScore = function (newScore) {
         this.score = newScore;
     };
-
 };
 

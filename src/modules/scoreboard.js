@@ -38,7 +38,6 @@ var scoreboard = function (playerCount) {
     };
 
 
-
     this.initScoreboard();
 
     console.log(playerCount);
