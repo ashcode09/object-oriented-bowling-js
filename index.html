@@ -6,7 +6,7 @@
 <body>
     <div id="initialisingGame">
         <div id="startGame" class="start-game active-view">
-            <input id="amountOfPlayersChosen" type="text"/>
+            <input id="amountOfPlayersChosen" type="text" placeholder="Enter amount of players" />
             <input type="submit" onclick="game.initPlayers()" value="Start"/>
         </div>
 
@@ -20,12 +20,15 @@
         </div>
     </div>
 
-    <table id="scoreboard" class="hide-element">
-        <thead>
-        </thead>
-        <tbody id="scoreboardBody">
-        </tbody>
-    </table>
+    <div id="scoreboard" class="hide-element">
+        <p id="itIsYourGo" class="hide-element"><span id="playerNameItIsYourGo"></span> it is your go!</p>
+        <table id="scoreboardTable">
+            <thead id="scoreboardHead">
+            </thead>
+            <tbody id="scoreboardBody">
+            </tbody>
+        </table>
+    </div>
 
     <script src="src/main.min.js"></script>
 </body>

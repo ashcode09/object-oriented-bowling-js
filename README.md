@@ -29,7 +29,11 @@ Recording scores on the scoreboard:
 - [x] Can I create *x* amount of rows for *x* amount of players?
 - [x] Can I list my players on of each row on the scoreboard?
 - [x] Can I create an empty scoreboard with 10 columns?
-- [ ] Can a player's roll be recorded on the scoreboard?
+- [x] Can I see which player's go it is?
+- [x] Can a player's first roll be recorded on the scoreboard?
+- [ ] Can a player's second roll be recorded on the scoreboard?
+- [ ] Can I see which player's turn it is
+- [ ] Can a player's strike (10 pins knocked over) be recorded on the scoreboard with the second roll then skipped?
 - [ ] Can I see a player's overall score?
 - [ ] Can I alternate through each player and record their rolls?
 - [ ] Can I see each player's overall score?

@@ -1,7 +1,8 @@
-var player = function () {
+function player(orderInPlayerList) {
     this.name = '';
-    this.rolls = [];
+    this.rolls = {};
     this.score = 0;
+    this.orderInPlayerList = orderInPlayerList;
 
     this.addName = function () {
         this.name = document.getElementById('playerName').value;
