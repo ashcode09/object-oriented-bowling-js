@@ -54,8 +54,6 @@ function scoreboard(playerCount, listOfPlayers) {
 
     this.recordPlayersRoll = function (pinsKnockedOver) {
         playerToPlay.rolls[currentRoll] = pinsKnockedOver;
-        console.log(playerToPlay);
-        console.log(document.getElementById('player' + playerToPlay.orderInPlayerList + 'Row').children)
         var columnsInPlayerRow = Array.prototype.slice.call(document.getElementById('player' + playerToPlay.orderInPlayerList + 'Row').children);
         var stop = false;
         for (var i=0; i<columnsInPlayerRow.length; i++) {
@@ -66,7 +64,13 @@ function scoreboard(playerCount, listOfPlayers) {
 
             }
         }
+        this.calculateOverallScore(pinsKnockedOver);
         this.whosTurnIsIt();
+    };
+
+    this.calculateOverallScore = function (scoreFromCurrentRoll) {
+        playerToPlay.score = playerToPlay.score + scoreFromCurrentRoll;
+        document.getElementById('scoreColumn' + playerToPlay.orderInPlayerList).innerHTML = playerToPlay.score;
     };
 
     this.initScoreboard();
